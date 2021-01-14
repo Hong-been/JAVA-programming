@@ -5,7 +5,6 @@ public class ReturnArray {
 		for(int k:intArray)
 			System.out.println(k);
 	}
-	
 	static int[] makeArray() {
 		int temp[]= {0,1,2,3,4};
 		for(int k:temp)
