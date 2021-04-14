@@ -40,10 +40,10 @@ public class WordGameApp {
 		Scanner scanner=new Scanner(System.in);
 		int people;
 		String name;
-		String word="¾Æ¹öÁö";
+		String word="ì•„ë²„ì§€";
 		String nextWord;
 		
-		System.out.println("<³¡¸»ÀÕ±â>");
+		System.out.println("<java WordGameApp>");
 		
 		System.out.print("How many people would participate?>> ");
 		people = scanner.nextInt();
@@ -73,9 +73,7 @@ public class WordGameApp {
 			if(gameover==false) {
 				break;
 				}
-			
-		
 		}
 	}
-
 }
+
