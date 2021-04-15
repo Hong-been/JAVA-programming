@@ -2,7 +2,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class UpDownGame {
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 	Random rand =new Random();
 	
 	Scanner scanner = new Scanner(System.in);
