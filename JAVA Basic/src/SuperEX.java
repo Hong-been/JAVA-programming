@@ -9,6 +9,12 @@ class Point{// why not 'public'? "should be declared in a file named 'Point.java
         this.x=x;
         this.y=y;
     }
+
+    @Override
+    public String toString() {
+        return "Point("+x+","+y+")";
+    }
+
     void showPoint(){
         System.out.println("("+x+","+y+")");
     }
