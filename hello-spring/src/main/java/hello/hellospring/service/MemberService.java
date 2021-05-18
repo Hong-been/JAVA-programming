@@ -10,7 +10,7 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository =new MemoryMemberRepository();
 
-    /*
+    /**
     * 회원가입
     * */
     public Long join(Member member){
@@ -35,6 +35,10 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
+    /**
+     * id로 회원 조회
+     */
+    /
     public Optional<Member> findOne(Long memberId) {
         return memberRepository.findById(memberId);
     }
