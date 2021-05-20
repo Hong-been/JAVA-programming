@@ -23,6 +23,26 @@ class MemberServiceTest {
         assertThat(member.getName()).isEqualTo(finder.getName());
 
     }
+    @Test
+    public void 중복_회원_예외(){
+        //given
+        Member member1=new Member();
+        member1.setName("Spring");
+
+        Member member2=new Member();
+        member2.setName("Spring");
+
+        //when
+        memberService.join(member1);
+        try{
+            memberService.join(member2);
+            fail();
+        }catch(IllegalStateException e) {
+            assertThat(e.getMessage()).isEqualTo("This name has already existed here.");
+        }
+
+        //then
+    }
 
     @Test
     void findMembers() {
